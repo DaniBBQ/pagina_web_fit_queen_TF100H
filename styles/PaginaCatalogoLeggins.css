@@ -1,0 +1,119 @@
+h1 {
+    background-color: red;
+    height: 200px;
+}
+
+h2 {
+    background-color: rgb(49, 180, 187);
+    height: 100px;
+}
+
+
+.cajaprincipalleggins {
+    border: solid black;
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(4, 1fr);
+
+    width: 90%;
+    margin: 30px;
+    gap: 20px;
+    height: 400px;
+
+}
+
+#legginuno {
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#leggindos {
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#leggintres {
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#leggincuatro {
+    border: solid rgb(28, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#leggincinco {
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#legginseis {
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#legginsiete {
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#legginocho {
+    border: solid rgb(28, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#legginnueve {
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#leggindiez {
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#legginonce {
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
