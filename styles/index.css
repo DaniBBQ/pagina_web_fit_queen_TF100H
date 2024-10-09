@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box; /* Facilita el cálculo de ancho y alto */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #a0a7ff; /* Color de fondo de la página */
+    color: white; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    padding: 20px; /* Espaciado interno */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal, si es necesario */
+}
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+/* INICIO DEL HEADER */
+
+header {
+    display: flex;
+  }
+
+.logo {
+    display: flex;
+    align-items: flex-start;            /* Centra verticalmente el logo y el texto */
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.logo-img {
+    height: 70px;                  /* Ajusta la altura del logo */
+}
+  
+.logo-text {
+    font-size: 24px;               /* Tamaño de fuente del texto */
+    font-weight: bold;             /* Peso de la fuente */
+}
+
+.search-form {
+    flex-grow: 1;                  /* Permite que el formulario ocupe espacio */
+    display: flex;                 /* Usa flexbox para el input */
+    justify-content: center;       /* Centra el input en el espacio */
+}
+  
+.search-input {
+    width: 50%;
+    padding: 15px;                 /* Espaciado interno */
+    border: 4px solid #685BF9;        /* Borde */
+    border-radius: 180px;           /* Bordes redondeados */
+}
+  
+.user-cart {
+    display: flex;                 /* Usa flexbox para alinear iconos */
+    align-items: flex-end;           /* Centra verticalmente los iconos */
+    gap: 30px;
+}
+
+.icon {
+    width: 50px;                   /* Ancho de los iconos */
+    height: 50px;                  /* Alto de los iconos */
+    cursor: pointer;               /* Cambia el cursor al pasar por encima */
+}
+
+/* FIN DEL HEADER */
+
+/* BANNER */
+.banner{
+    position: static;
+}
+
+.banner_img {
+    width: 105%;       /* Asegura que la imagen ocupe todo el contenedor */
+    height: auto;      /* Mantiene la proporción de la imagen */
+}
+
+.banner_text {
+    position: absolute; /* Posiciona el texto de manera absoluta */
+    top: 50%;           /* Centra verticalmente */
+    left: 20%;          /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para que el texto esté verdaderamente centrado */
+    color: white;       /* Color del texto (ajusta según sea necesario) */
+    font-size: 70px;
+}
+
+/* SUBTITULO NUESTROS PRODUCTOS */
+
+.nuestros_productos {
+    display: flex;
+    width: 100%;
+    background-color: #7f7eff; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    justify-content: center;
+}
