@@ -7,21 +7,43 @@ h2 {
     background-color: rgb(49, 180, 187);
     height: 100px;
 }
+button {
+    padding: 15px;
+    background-color: azure;
+    width: 250px;
+    border-radius: 25px;
+    margin-left: 15px;
+}
 
+.contenedorimagenes {
+    border: solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenedorimagenes img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+
+}
 
 #cajaprincipalyael {
     border: solid black;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     width: 90%;
     margin: 30px;
     gap: 20px;
-    height: 400px;
+   
 
 }
 
-#yaeluno {
+/* #yaeluno {
     border: solid red;
     display: flex;
     flex-direction: column;
@@ -54,7 +76,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .cajaprincipalsublimados {
 
@@ -63,10 +85,10 @@ h2 {
     width: 90%;
     margin: 30px;
     gap: 20px;
-    height: 400px;
+  
 }
 
-#sublimadouno {
+/* #sublimadouno {
     border: solid rgb(28, 17, 17);
     display: flex;
     flex-direction: column;
@@ -82,7 +104,7 @@ h2 {
     align-items: center;
     justify-content: center;
 
-}
+} */
 
 .cajaprincipalsublimadosderecha{
 
@@ -91,10 +113,10 @@ h2 {
     width: 90%;
     margin: 30px;
     gap: 20px;
-    height: 400px;
+  
 }
 
-#sublimadoderechauno {
+/* #sublimadoderechauno {
     border: solid rgb(28, 17, 17);
     display: flex;
     flex-direction: column;
@@ -120,7 +142,7 @@ h2 {
     align-items: center;
     justify-content: center;
 
-}
+} */
 
 .cajaprincipalotrosdiseños{
 
@@ -129,10 +151,10 @@ h2 {
     width: 90%;
     margin: 30px;
     gap: 20px;
-    height: 400px;
+  
 }
 
-#otrosdiseñosuno {
+/* #otrosdiseñosuno {
     border: solid rgb(28, 17, 17);
     display: flex;
     flex-direction: column;
@@ -156,6 +178,5 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
-}

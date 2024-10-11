@@ -1,290 +1,165 @@
+*{
+background-color: rgba(160, 105, 211, 0.164);
+}
+
+p {
+    font-size: 25px;
+    color: aliceblue;
+}
+
+button {
+    padding: 15px;
+    background-color: azure;
+    width: 250px;
+    border-radius: 25px;
+    margin-left: 15px;
+}
+
+
 h1 {
-    background-color: red;
-    height: 200px;
+    background-color: rgba(208, 206, 206, 0.137);
+    height: 100px;
+    text-align: center;
+    font-size: 90px;
 }
 
 h2 {
-    background-color: rgb(49, 180, 187);
+    background-color: rgba(9, 231, 242, 0.43);
     height: 100px;
+    font-size: 50px;
+
+}
+
+h4 {
+    font-size: 25px;
+    color: aqua;
+}
+
+.contenedorimagenes {
+    border: solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenedorimagenes img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+
 }
 
 
 .cajaprincipalsublimadoytexturizado {
     border: solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     width: 90%;
     margin: 30px;
     gap: 20px;
-    height: 400px;
+    margin-left: 100px;
+ 
 
 }
 
-#enterizouno {
+#enterizouno, 
+#enterizodos,
+#enterizotres
+ {
     border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#enterizodos {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#enterizotres {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 33%;
+    text-align: center;
+    
 }
 
 
 .cajaprincipalvestidos {
     border: solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     width: 90%;
     margin: 30px;
     gap: 20px;
-    height: 400px;
+margin-left: 100px;
 
 }
 
-#vestidouno {
+
+#vestidouno,
+#vestidodos,
+#vestidotres
+{
     border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 33%;
+    text-align: center;
 }
 
-
-#vestidodos {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#vestidotres {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .cajaprincipalenterizoslulu {
     border: solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     width: 90%;
     margin: 30px;
-    gap: 20px;
-    height: 400px;
+    gap: 42px;
+    margin-left: 100px;
+   
 
 }
 
-#enterizoluluuno {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#enterizoluludos {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
+#enterizoluluuno,
+#emterizoluludos,
 #enterizolulutres {
     border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 33%;
+    text-align: center;
 }
 
 .cajaprincipalconjuntolulupushup {
     border: solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     width: 90%;
     margin: 30px;
     gap: 20px;
-    height: 400px;
+    margin-left: 100px;
+ 
 
 }
 
-#lulupushupuno {
+#lulupushupuno,
+#lulupushupdos
+{
     border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 50%;
+    text-align: center;
 }
 
-
-#lulupushupdos {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .cajaprincipalcorazon {
     border: solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     width: 90%;
     margin: 30px;
-    gap: 20px;
-    height: 400px;
+    gap: 50px;
+margin-left: 100px;
 
 }
 
-#enterizocorazon {
+#enterizocorazon,
+#conjuntocorazon
+{
     border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#conjuntocorazon {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.cajaprincipalotrosconjuntos {
-    border: solid rgb(255, 0, 0);
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
-    width: 90%;
-    margin: 30px;
-    gap: 20px;
-    height: 800px;
-
-}
-
-
-#conjuntouno {
+    width: 100%;
+    text-align: center;
     
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 
-#conjuntodos {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#conjuntotres {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#conjuntocuatro {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#conjuntocinco {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#conjuntoseis {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#conjuntosiete {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#conjuntoocho {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#conjuntonueve {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#conjuntodiez {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#conjuntoonce {
-    border: solid rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+.cajaprincipalconjuntosdosytrespiezas
+ {
+        height: 800px;
+        border: solid rgb(0, 0, 0);
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 30px;
+    }
