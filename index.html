@@ -4,24 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FITQUEEN</title>
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
+    <!-- Header, contiene el menu de busqueda, acceso al perfil y el carrito de compras, tambien tiene el logo y el titulo de la pagina-->
     <header>
-        <h1>FITQUEEN</h1>
-        <nav>
-            
-        </nav>
+        <div class="logo">
+            <img src="/assets/logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">FITQUEEN</span>
+        </div>
+        <form class="search-form">
+            <input type="text" placeholder="Buscar productos..." class="search-input">
+        </form>
+        <div class="user-cart">
+            <img src="/assets/profile_icon.png" alt="Perfil" class="icon">
+            <img src="/assets/shop_icon.png" alt="Carrito" class="icon">
+        </div>
     </header>
+
     <!-- Banner de inicio -->
-    <div>
-        <img src="" alt="">
-        <p>Conquista tu meta <br> Luce como una reina</p>
+    <div class="banner">
+        <p class="banner_text">Conquista tu meta <br> Luce como una reina</p>
+        <img class="banner_img" src="/assets/pose arnold.jpg" alt="banner_img">
+    </div>
+    <!-- Subtitulo Nuestros Productos-->
+    <div class="nuestros_productos">
+        <h2>NUESTROS PRODUCTOS</h2>
     </div>
     <main>
-
+        <!-- Catalogos de secciones -->
+        <section class="seccion_catalogos">
+            <div class="catalogo">
+                <img src="/assets/conjunto.jpg" alt="conjuntos">
+                <button class="btn_conocer">CONOCER MÁS</button>
+            </div>
+            <div class="catalogo">
+                <img src="/assets/leggin.jpg" alt="leggin">
+                <button class="btn_conocer">CONOCER MÁS</button>
+            </div>
+            <div class="catalogo">
+                <img src="/assets/blusas.jpg" alt="blusas">
+                <button class="btn_conocer">CONOCER MÁS</button>
+            </div>
+        </section>
     </main>
     <footer>
-
     </footer>
 </body>
 </html>
