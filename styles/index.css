@@ -37,7 +37,7 @@ body, h1, h2, h3, p, ul, li {
 
 /* INICIO DEL HEADER */
 
-header {
+nav {
     position: static;
     display: flex;
     padding: 20px;
@@ -203,4 +203,77 @@ header {
 
 .btn_conocer:hover {
     background-color: #685BF9;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+}
+
+.garantias {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+}
+
+.garantia {
+    flex: 1 1 18%; /* Ajusta el tamaño de cada div */
+    text-align: center; /* Centra el texto */
+    margin: 10px; /* Espacio entre los elementos */
+    font-family: Parrafo;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.garantia img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del div */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.linea_separadora {
+    height: 5px; /* Grosor de la línea */
+    background-color: #685BF9; /* Cambia el color según tu diseño */
+    margin: 2%; /* Margen en los lados para alejar la línea de los bordes */
+}
+
+.contactos {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.contacto {
+    flex: 1 1 18%; /* Ajusta el tamaño de cada div */
+    text-align: center; /* Centra el texto */
+    margin: 10px; /* Espacio entre los elementos */
+    font-family: Parrafo;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.redes_sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.iconos {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin-bottom: 10px; /* Espacio entre los iconos y el logo */
+}
+
+.iconos img {
+    margin: 0 5px; /* Espacio entre los iconos */
+    height: 40px;
+}
+
+.logo {
+    margin-bottom: 10px; /* Espacio entre el logo y el texto */
+    height: 70px;
+}
+
+.texto {
+    text-align: center; /* Centra el texto */
+    font-family: Titulos;
+    font-weight: bold;
 }
