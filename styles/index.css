@@ -5,7 +5,7 @@
 /* Tipografías */
 @font-face {
     font-family: Titulos;
-    src: url("/assets/Kadwa-Bold.ttf")
+    src: url("/assets/Kadwa-Bold.ttf");
 }
 
 @font-face {
@@ -17,7 +17,6 @@
     font-family: Parrafo;
     src: url("/assets/Barlow-Regular.ttf");
 }
-
 
 body, html {
     margin: 0;
@@ -33,98 +32,91 @@ body, html {
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-  }
+}
 
 /* INICIO DEL HEADER */
-
 nav {
     position: static;
     display: flex;
     padding: 20px;
     top: 0;
-  }
+}
 
 .logo {
     display: flex;
-    align-items: flex-start;            /* Centra verticalmente el logo y el texto */
+    align-items: flex-start;
     flex-direction: row-reverse;
     gap: 20px;
 }
 
 .logo-img {
-    height: 70px;                  /* Ajusta la altura del logo */
+    height: 70px; /* Ajusta la altura del logo */
 }
   
 .logo-text {
-    font-size: 24px;               /* Tamaño de fuente del texto */
-    font-weight: bold;             /* Peso de la fuente */
+    font-size: 24px;
+    font-weight: bold;
     font-family: Titulos;
     margin-top: 5%;
 }
 
 .search-form {
-    flex-grow: 1;                  /* Permite que el formulario ocupe espacio */
-    display: flex;                 /* Usa flexbox para el input */
-    justify-content: center;       /* Centra el input en el espacio */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
   
 .search-input {
     width: 50%;
-    padding: 15px;                 /* Espaciado interno */
-    border: 4px solid #685BF9;        /* Borde */
-    border-radius: 180px;           /* Bordes redondeados */
+    padding: 15px;
+    border: 4px solid #685BF9;
+    border-radius: 180px;
 }
   
 .user-cart {
-    display: flex;                 /* Usa flexbox para alinear iconos */
-    align-items: flex-end;           /* Centra verticalmente los iconos */
+    display: flex;
+    align-items: flex-end;
     gap: 30px;
 }
 
 .icon {
-    width: 50px;                   /* Ancho de los iconos */
-    height: 50px;                  /* Alto de los iconos */
-    cursor: pointer;               /* Cambia el cursor al pasar por encima */
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
     margin-bottom: 7%;
 }
-
-/* FIN DEL HEADER */
 
 /* BANNER */
 .banner {
     position: relative;
-    width: 100%; /* O el tamaño que prefieras */
-    overflow: hidden; /* Para ocultar cualquier parte que sobresalga */
+    width: 100%;
+    overflow: hidden;
 }
 
 .banner_img {
-    width: 100%; /* Escalar la imagen al 100% del contenedor */
-    height: auto; /* Mantener la proporción de la imagen */
+    width: 100%;
+    height: auto;
 }
 
 .banner_text {
     position: absolute;
     font-family: Parrafo;
     font-size: 100px;
-    top: 50%; /* Centrar verticalmente */
-    left: 30%; /* Centrar horizontalmente */
-    transform: translate(-50%, -50%); /* Ajustar la posición para centrar */
-    color: white; /* Cambiar el color del texto según el fondo */
-    text-shadow: 1px 1px 2px black; /* Sombra para mejorar la legibilidad */
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
-
 /* SUBTITULO NUESTROS PRODUCTOS */
-
 .nuestros_productos {
-    position: relative;
     display: flex;
     width: 100%;
     font-size: 50px;
     font-family: Subtitulo;
-    background-color: #7f7eff; /* Color de fondo */
-    padding: 40px; /* Espaciado interno */
-    color: white; /* Color del texto */
+    background-color: #7f7eff;
+    padding: 40px;
     justify-content: center;
     top: -4px;
 }
@@ -140,13 +132,7 @@ nav {
 .catalogo {
     flex: 1;
     max-width: calc(33.33% - 20px);
-    position: relative; /* Permite la posición absoluta del botón */
-}
-
-.catalogo1 {
-    flex: 1;
-    max-width: calc(33.33% - 20px);
-    position: relative; /* Permite la posición absoluta del botón */
+    position: relative;
 }
 
 .catalogo img {
@@ -154,43 +140,25 @@ nav {
     height: auto;
 }
 
-.catalogo1 img {
-    width: 100%;
-    height: 99%;
-}
-.catalogo1 h3 {
-    font-family: Titulos;
-    font-size: 40px;
-    position: absolute; /* Posiciona el h3 sobre la imagen */
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta el centro del h3 */
-    color: white; /* Cambia el color del texto para que se vea sobre la imagen */
-    text-align: center; /* Centra el texto */
-    padding: 0px 15px;
-    border-radius: 5px;
-    background-color: rgb(0, 0, 0,0.5);
-}
-
 .catalogo h3 {
     font-family: Titulos;
     font-size: 40px;
-    position: absolute; /* Posiciona el h3 sobre la imagen */
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta el centro del h3 */
-    color: white; /* Cambia el color del texto para que se vea sobre la imagen */
-    text-align: center; /* Centra el texto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
     padding: 0px 15px;
     border-radius: 5px;
     background-color: rgb(0, 0, 0,0.5);
 }
 
 .btn_conocer {
-    position: absolute; /* Fija el botón en relación a su contenedor */
-    bottom: 60px; /* Distancia desde el fondo de la imagen */
-    left: 50%; /* Centra el botón horizontalmente */
-    transform: translateX(-50%); /* Ajusta el botón para que esté centrado */
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 10px 20px;
     background-color: #7f7eff;
     color: white;
@@ -212,39 +180,39 @@ footer {
 
 .garantias {
     display: flex;
-    justify-content: space-between; /* Espacio entre los elementos */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .garantia {
-    flex: 1 1 18%; /* Ajusta el tamaño de cada div */
-    text-align: center; /* Centra el texto */
-    margin: 10px; /* Espacio entre los elementos */
+    flex: 1 1 18%;
+    text-align: center;
+    margin: 10px;
     font-family: Parrafo;
     font-weight: bold;
     font-size: 20px;
 }
 
 .garantia img {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del div */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%;
+    height: auto;
 }
 
 .linea_separadora {
-    height: 5px; /* Grosor de la línea */
-    background-color: #685BF9; /* Cambia el color según tu diseño */
-    margin: 2%; /* Margen en los lados para alejar la línea de los bordes */
+    height: 5px;
+    background-color: #685BF9;
+    margin: 2%;
 }
 
 .contactos {
     display: flex;
-    justify-content: space-between; /* Espacio entre los elementos */
+    justify-content: space-between;
 }
 
 .contacto {
-    flex: 1 1 18%; /* Ajusta el tamaño de cada div */
-    text-align: center; /* Centra el texto */
-    margin: 10px; /* Espacio entre los elementos */
+    flex: 1 1 18%;
+    text-align: center;
+    margin: 10px;
     font-family: Parrafo;
     font-weight: bold;
     font-size: 20px;
@@ -253,27 +221,82 @@ footer {
 .redes_sociales {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente los elementos */
+    align-items: center;
 }
 
 .iconos {
     display: flex;
-    justify-content: center; /* Centra los iconos horizontalmente */
-    margin-bottom: 10px; /* Espacio entre los iconos y el logo */
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .iconos img {
-    margin: 0 5px; /* Espacio entre los iconos */
+    margin: 0 5px;
     height: 40px;
 }
 
 .logo {
-    margin-bottom: 10px; /* Espacio entre el logo y el texto */
+    margin-bottom: 10px;
     height: 70px;
 }
 
 .texto {
-    text-align: center; /* Centra el texto */
+    text-align: center;
     font-family: Titulos;
     font-weight: bold;
+}
+
+/* Media Queries */
+/* Para iPhone 12 (390px de ancho) */
+@media only screen and (max-width: 390px) {
+    .banner_text {
+        font-size: 50px;
+        left: 20%;
+    }
+
+    .search-input {
+        width: 80%;
+    }
+
+    .seccion_catalogos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalogo {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nuestros_productos {
+        font-size: 30px;
+    }
+
+    .btn_conocer {
+        font-size: 20px;
+    }
+}
+
+/* Para iPad Pro (1024px de ancho) */
+@media only screen and (max-width: 1024px) {
+    .banner_text {
+        font-size: 80px;
+        left: 40%;
+    }
+
+    .search-input {
+        width: 70%;
+    }
+
+    .nuestros_productos {
+        font-size: 40px;
+    }
+
+    .catalogo {
+        max-width: 45%;
+    }
+
+    .btn_conocer {
+        font-size: 25px;
+    }
 }

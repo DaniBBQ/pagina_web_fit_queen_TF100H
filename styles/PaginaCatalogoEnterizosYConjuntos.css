@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box; /* Facilita el cálculo de ancho y alto */
+}
+
+/* Tipografías */
+@font-face {
+    font-family: Titulos;
+    src: url("/assets/Kadwa-Bold.ttf")
+}
+
+@font-face {
+    font-family: Subtitulo;
+    src: url("/assets/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: Parrafo;
+    src: url("/assets/Barlow-Regular.ttf");
+}
+
+/* INICIO DEL HEADER */
+
+header {
+    position: static;
+    display: flex;
+    padding: 20px;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start; /* Centra verticalmente el logo y el texto */
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.logo-img {
+    height: 70px; /* Ajusta la altura del logo */
+}
+  
+.logo-text {
+    font-size: 24px; /* Tamaño de fuente del texto */
+    font-weight: bold; /* Peso de la fuente */
+    font-family: Titulos;
+    margin-top: 5%;
+}
+
+.search-form {
+    flex-grow: 1; /* Permite que el formulario ocupe espacio */
+    display: flex; /* Usa flexbox para el input */
+    justify-content: center; /* Centra el input en el espacio */
+}
+  
+.search-input {
+    width: 50%;
+    padding: 15px; /* Espaciado interno */
+    border: 4px solid #685BF9; /* Borde */
+    border-radius: 180px; /* Bordes redondeados */
+}
+  
+.user-cart {
+    display: flex; /* Usa flexbox para alinear iconos */
+    align-items: flex-end; /* Centra verticalmente los iconos */
+    gap: 30px;
+}
+
+.icon {
+    width: 50px; /* Ancho de los iconos */
+    height: 50px; /* Alto de los iconos */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin-bottom: 7%;
+}
+
+/* FIN DEL HEADER */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #a0a7ff; /* Color de fondo de la página */
+    color: white; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    width: 100%;
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal, si es necesario */
+}
+
+main {
+    margin: 0 150px;
+}
+
+p {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+button {
+    padding: 15px;
+    background-color: azure;
+    width: 300px;
+    border-radius: 25px;
+    border-color: #685bf9;
+    margin-left: 30px;
+    border-width: 5px;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: Titulos;
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    height: 100px;
+    font-size: 40px;
+    font-family: Subtitulo;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.contenedorimagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorimagenes img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.cajaprincipalsublimadoytexturizado {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+
+#enterizouno,
+#enterizodos,
+#enterizotres {
+    width: 33%;
+    text-align: center;
+}
+
+.cajaprincipalvestidos {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+
+#vestidouno,
+#vestidodos,
+#vestidotres {
+    width: 33%;
+    text-align: center;
+}
+
+.cajaprincipalenterizoslulu {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 20px; /* Se ajusta el gap para una mejor distribución */
+}
+
+#enterizoluluuno,
+#emterizoluludos,
+#enterizolulutres {
+    width: 33%;
+    text-align: center;
+}
+
+.cajaprincipalconjuntolulupushup {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+
+#lulupushupuno,
+#lulupushupdos {
+    width: 50%;
+    text-align: center;
+}
+
+.cajaprincipalcorazon {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 50px;
+}
+
+#enterizocorazon,
+#conjuntocorazon {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.cajaprincipalconjuntosdosytrespiezas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+/* footer */
+/* FOOTER */
+footer {
+    padding: 20px;
+}
+
+.garantias {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+}
+
+.garantia {
+    flex: 1 1 18%; /* Ajusta el tamaño de cada div */
+    text-align: center; /* Centra el texto */
+    margin: 10px; /* Espacio entre los elementos */
+    font-family: Parrafo;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.garantia img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del div */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.linea_separadora {
+    height: 5px; /* Grosor de la línea */
+    background-color: #685BF9; /* Cambia el color según tu diseño */
+    margin: 2%; /* Margen en los lados para alejar la línea de los bordes */
+}
+
+.contactos {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.contacto {
+    flex: 1 1 18%; /* Ajusta el tamaño de cada div */
+    text-align: center; /* Centra el texto */
+    margin: 10px; /* Espacio entre los elementos */
+    font-family: Parrafo;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.redes_sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.iconos {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin-bottom: 10px; /* Espacio entre los iconos y el logo */
+}
+
+.iconos img {
+    margin: 0 5px; /* Espacio entre los iconos */
+    height: 40px;
+}
+
+.logo {
+    margin-bottom: 10px; /* Espacio entre el logo y el texto */
+    height: 70px;
+}
+
+.texto {
+    text-align: center; /* Centra el texto */
+    font-family: Titulos;
+    font-weight: bold;
+}
+
+/* Media Queries */
+
+/* Estilos para iPhone 12 */
+@media (max-width: 375px) {
+    main {
+        margin: 0 20px; /* Reduce el margen en pantallas pequeñas */
+    }
+
+    .search-input {
+        width: 80%; /* Ajusta el tamaño de la barra de búsqueda */
+    }
+
+    h1 {
+        font-size: 40px; /* Ajusta el tamaño del encabezado */
+    }
+
+    h2 {
+        font-size: 30px; /* Ajusta el tamaño de los subtítulos */
+    }
+
+    .contenedorimagenes img {
+        width: 200px; /* Ajusta el tamaño de las imágenes */
+        height: 300px;
+    }
+
+    .cajaprincipalconjuntosdosytrespiezas {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    }
+
+    .cajaprincipalcorazon {
+        flex-direction: column; /* Cambia a columna para mejor visualización */
+    }
+
+    .cajaprincipalvestidos,
+    .cajaprincipalenterizoslulu,
+    .cajaprincipalconjuntolulupushup {
+        flex-direction: column; /* Cambia a columna */
+        gap: 10px; /* Ajusta el gap para mejor visualización */
+    }
+
+    button {
+        width: 100%; /* Botón a ancho completo */
+    }
+}
+
+/* Estilos para iPad Pro */
+@media (max-width: 1024px) {
+    .search-input {
+        width: 60%; /* Ajusta el tamaño de la barra de búsqueda */
+    }
+
+    h1 {
+        font-size: 50px; /* Ajusta el tamaño del encabezado */
+    }
+
+    h2 {
+        font-size: 35px; /* Ajusta el tamaño de los subtítulos */
+    }
+
+    .contenedorimagenes img {
+        width: 250px; /* Ajusta el tamaño de las imágenes */
+        height: 350px;
+    }
+
+    .cajaprincipalconjuntosdosytrespiezas {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas para iPad */
+    }
+
+    .cajaprincipalcorazon {
+        flex-direction: row; /* Mantiene el layout en fila */
+    }
+
+    .cajaprincipalvestidos,
+    .cajaprincipalenterizoslulu,
+    .cajaprincipalconjuntolulupushup {
+        flex-direction: row; /* Mantiene el layout en fila */
+        gap: 20px; /* Mantiene el gap entre elementos */
+    }
+
+    button {
+        width: 80%; /* Ajusta el tamaño del botón */
+    }
+}

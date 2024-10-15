@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box; /* Facilita el cálculo de ancho y alto */
+}
+
+/* Tipografías */
+@font-face {
+    font-family: Titulos;
+    src: url("/assets/Kadwa-Bold.ttf")
+}
+
+@font-face {
+    font-family: Subtitulo;
+    src: url("/assets/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: Parrafo;
+    src: url("/assets/Barlow-Regular.ttf");
+}
+
+/* INICIO DEL HEADER */
+
+header {
+    position: static;
+    display: flex;
+    padding: 20px;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start; /* Centra verticalmente el logo y el texto */
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.logo-img {
+    height: 70px; /* Ajusta la altura del logo */
+}
+  
+.logo-text {
+    font-size: 24px; /* Tamaño de fuente del texto */
+    font-weight: bold; /* Peso de la fuente */
+    font-family: Titulos;
+    margin-top: 5%;
+}
+
+.search-form {
+    flex-grow: 1; /* Permite que el formulario ocupe espacio */
+    display: flex; /* Usa flexbox para el input */
+    justify-content: center; /* Centra el input en el espacio */
+}
+  
+.search-input {
+    width: 50%;
+    padding: 15px; /* Espaciado interno */
+    border: 4px solid #685BF9; /* Borde */
+    border-radius: 180px; /* Bordes redondeados */
+}
+  
+.user-cart {
+    display: flex; /* Usa flexbox para alinear iconos */
+    align-items: flex-end; /* Centra verticalmente los iconos */
+    gap: 30px;
+}
+
+.icon {
+    width: 50px; /* Ancho de los iconos */
+    height: 50px; /* Alto de los iconos */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin-bottom: 7%;
+}
+
+/* FIN DEL HEADER */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #a0a7ff; /* Color de fondo de la página */
+    color: white; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal, si es necesario */
+}
+
+main {
+    margin: 0 150px;
+}
+
+p {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+button {
+    padding: 15px;
+    background-color: azure;
+    width: 300px;
+    border-radius: 25px;
+    border-color: #685bf9;
+    margin-left: 30px;
+    border-width: 5px;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: Titulos;
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    height: 100px;
+    font-size: 40px;
+    font-family: Subtitulo;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.contenedorimagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorimagenes img {
+    width: 100%;
+    max-width: 300px; /* Mantiene el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Cubre el área del contenedor sin distorsionar */
+}
+
+#cajaprincipalyael {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.cajaprincipalsublimados {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 30px;
+    gap: 20px;
+}
+
+.cajaprincipalsublimadosderecha {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 30px;
+    gap: 20px;
+}
+
+.cajaprincipalotrosdiseños {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 30px;
+    gap: 20px;
+}
+
+/* inicio footer */
+/* FOOTER */
+footer {
+    padding: 20px;
+}
+
+.garantias {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+}
+
+.garantia {
+    flex: 1 1 18%; /* Ajusta el tamaño de cada div */
+    text-align: center; /* Centra el texto */
+    margin: 10px; /* Espacio entre los elementos */
+    font-family: Parrafo;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.garantia img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del div */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.linea_separadora {
+    height: 5px; /* Grosor de la línea */
+    background-color: #685BF9; /* Cambia el color según tu diseño */
+    margin: 2%; /* Margen en los lados para alejar la línea de los bordes */
+}
+
+.contactos {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.contacto {
+    flex: 1 1 18%; /* Ajusta el tamaño de cada div */
+    text-align: center; /* Centra el texto */
+    margin: 10px; /* Espacio entre los elementos */
+    font-family: Parrafo;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.redes_sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.iconos {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin-bottom: 10px; /* Espacio entre los iconos y el logo */
+}
+
+.iconos img {
+    margin: 0 5px; /* Espacio entre los iconos */
+    height: 40px;
+}
+
+.logo {
+    margin-bottom: 10px; /* Espacio entre el logo y el texto */
+    height: 70px;
+}
+
+.texto {
+    text-align: center; /* Centra el texto */
+    font-family: Titulos;
+    font-weight: bold;
+}
+
+/* Media Query para iPhone 12 */
+@media only screen and (max-width: 390px) {
+    body {
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+    }
+    main {
+        margin: 0 10px; /* Reduce el margen para pantallas pequeñas */
+    }
+    h1 {
+        font-size: 28px; /* Ajusta el tamaño del encabezado */
+    }
+    h2 {
+        font-size: 24px; /* Ajusta el tamaño del subtítulo */
+    }
+    .contenedorimagenes {
+        display: grid; /* Cambia a grid para mejor organización */
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 10px; /* Espacio entre imágenes */
+        width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+    }
+    .contenedorimagenes img {
+        width: 100%; /* Asegura que las imágenes se ajusten al contenedor */
+        max-width: none; /* Elimina el máximo ancho para que ocupe el espacio completo */
+    }
+}
+
+/* Media Query para iPad Pro */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px; /* Ajusta el tamaño de la fuente */
+    }
+    main {
+        margin: 0 20px; /* Ajusta el margen para pantallas medianas */
+    }
+    h1 {
+        font-size: 48px; /* Ajusta el tamaño del encabezado */
+    }
+    h2 {
+        font-size: 36px; /* Ajusta el tamaño del subtítulo */
+    }
+    .contenedorimagenes {
+        display: grid; /* Cambia a grid para mejor organización */
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+        gap: 15px; /* Espacio entre imágenes */
+        width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+    }
+    .contenedorimagenes img {
+        width: 100%; /* Asegura que las imágenes se ajusten al contenedor */
+    }
+}
