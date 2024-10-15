@@ -165,3 +165,7 @@ header {
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     margin-bottom: 7%;
 }
+
+.linea_separadora {
+    color: #685BF9;
+}
