@@ -1,22 +1,143 @@
-h1 {
-    background-color: red;
-    height: 200px;
+* {
+    box-sizing: border-box; /* Facilita el cálculo de ancho y alto */
 }
 
-h2 {
-    background-color: rgb(49, 180, 187);
-    height: 100px;
+/* Tipografías */
+@font-face {
+    font-family: Titulos;
+    src: url("/assets/Kadwa-Bold.ttf")
 }
+
+@font-face {
+    font-family: Subtitulo;
+    src: url("/assets/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: Parrafo;
+    src: url("/assets/Barlow-Regular.ttf");
+}
+
+/* INICIO DEL HEADER */
+
+header {
+    position: static;
+    display: flex;
+    padding: 20px;
+    top: 0;
+  }
+
+.logo {
+    display: flex;
+    align-items: flex-start;            /* Centra verticalmente el logo y el texto */
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.logo-img {
+    height: 70px;                  /* Ajusta la altura del logo */
+}
+  
+.logo-text {
+    font-size: 24px;               /* Tamaño de fuente del texto */
+    font-weight: bold;             /* Peso de la fuente */
+    font-family: Titulos;
+    margin-top: 5%;
+}
+
+.search-form {
+    flex-grow: 1;                  /* Permite que el formulario ocupe espacio */
+    display: flex;                 /* Usa flexbox para el input */
+    justify-content: center;       /* Centra el input en el espacio */
+}
+  
+.search-input {
+    width: 50%;
+    padding: 15px;                 /* Espaciado interno */
+    border: 4px solid #685BF9;        /* Borde */
+    border-radius: 180px;           /* Bordes redondeados */
+}
+  
+.user-cart {
+    display: flex;                 /* Usa flexbox para alinear iconos */
+    align-items: flex-end;           /* Centra verticalmente los iconos */
+    gap: 30px;
+}
+
+.icon {
+    width: 50px;                   /* Ancho de los iconos */
+    height: 50px;                  /* Alto de los iconos */
+    cursor: pointer;               /* Cambia el cursor al pasar por encima */
+    margin-bottom: 7%;
+}
+
+/* FIN DEL HEADER */
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #a0a7ff; /* Color de fondo de la página */
+    color: white; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal, si es necesario */
+}
+
+
+
+main {
+    margin: 0 150px;
+}
+
+p {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
 button {
     padding: 15px;
     background-color: azure;
-    width: 250px;
+    width: 300px;
     border-radius: 25px;
-    margin-left: 15px;
+    border-color: #685bf9 ;
+    margin-left: 30px;
+    border-width: 5px;
+    font-size: 15px;
+   
+}
+
+
+h1 {
+    font-family: Titulos;
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+  
+    height: 100px;
+    font-size: 40px;
+    font-family: Subtitulo;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+
+}
+
+h4 {
+ font-size: 30px;
+        
 }
 
 .contenedorimagenes {
-    border: solid rgb(0, 0, 0);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,51 +153,16 @@ button {
 }
 
 #cajaprincipalyael {
-    border: solid black;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 90%;
-    margin: 30px;
-    gap: 20px;
+    margin: auto;
    
 
 }
 
-/* #yaeluno {
-    border: solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#yaeldos {
-    border: solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#yaeltres {
-    border: solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#yaelcuatro {
-    border: solid rgb(28, 17, 17);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
 
 .cajaprincipalsublimados {
 
@@ -88,23 +174,6 @@ button {
   
 }
 
-/* #sublimadouno {
-    border: solid rgb(28, 17, 17);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#sublimadodos {
-
-    border: solid rgb(28, 17, 17);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-} */
 
 .cajaprincipalsublimadosderecha{
 
@@ -116,33 +185,6 @@ button {
   
 }
 
-/* #sublimadoderechauno {
-    border: solid rgb(28, 17, 17);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#sublimadoderechados {
-
-    border: solid rgb(28, 17, 17);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#sublimadoderechatres {
-
-    border: solid rgb(28, 17, 17);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-} */
 
 .cajaprincipalotrosdiseños{
 
@@ -153,30 +195,4 @@ button {
     gap: 20px;
   
 }
-
-/* #otrosdiseñosuno {
-    border: solid rgb(28, 17, 17);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#otrosdiseñosdos {
-
-    border: solid rgb(28, 17, 17);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#otrosdiseñostres {
-
-    border: solid rgb(28, 17, 17);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 
